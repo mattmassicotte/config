@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[user]
+	name = Matt Massicotte
+	email = xxx
+[push]
+	default = upstream
+[core]
+	ignorecase = false
+	editor = mate -w
+	excludesfile = /Users/matt/.gitignore_global
+[merge]
+	ff = false
