@@ -15,3 +15,6 @@ mkdir -p "${HOME}/.config"
 ln -s "${PWD}/.config/fish" "${HOME}/.config/fish"
 
 ln -s "${PWD}/.bashrc" "${HOME}/.bashrc"
+
+mkdir -p "${HOME}/.rbenv/bin"
+mkdir -p "${HOME}/.rbenv/shims"
