@@ -2,12 +2,11 @@
 	ui = true
 [user]
 	name = Matt Massicotte
-	email = xxx
+	email = mmassicotte@twitter.com
 [push]
 	default = upstream
 [core]
 	ignorecase = false
 	editor = mate -w
 	excludesfile = /Users/matt/.gitignore_global
-[merge]
-	ff = false
+
