@@ -3,10 +3,16 @@
 set -u -o pipefail
 set -x
 
+if [ ! -f install.sh ]; then
+	echo "Run this from the config directory"
+	exit 1
+fi
+
 ln -s "${PWD}/.gemrc" "${HOME}/.gemrc"
 
 ln -s "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${PWD}/.gitignore_global" "${HOME}/.gitignore_global"
+ln -s "${PWD}/.gitattributes" "${HOME}/.gitattributes"
 
 mkdir -p "${HOME}/.ssh"
 ln -s "${PWD}/.ssh/config" "${HOME}/.ssh/config"

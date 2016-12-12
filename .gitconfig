@@ -9,4 +9,5 @@
 	ignorecase = false
 	editor = mate -w
 	excludesfile = /Users/matt/.gitignore_global
+	attributesfile = /Users/matt/.gitattributes
 
