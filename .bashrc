@@ -1,6 +1,6 @@
-set PATH /usr/local/bin $HOME/.rbenv/bin $HOME/.rbenv/shims $PATH
-set LSCOLORS "hxfxcxdxbxegedabagacad"
-set EDITOR "mate -w"
+export PATH=/usr/local/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
+export LSCOLORS="hxfxcxdxbxegedabagacad"
+export EDITOR="mate -w"
 
 ### Functions for setting and getting environment variables from the OSX keychain ###
 ### Adapted from https://www.netmeister.org/blog/keychain-passwords.html ###

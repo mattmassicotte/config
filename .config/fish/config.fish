@@ -14,3 +14,5 @@ set -x HOMEBREW_GITHUB_API_TOKEN 805d08658547a864b9ecc6f77d5d96b642c598a6
 if test -e $HOME/.local/config.fish
     source $HOME/.local/config.fish
 end
+
+status --is-interactive; and source (rbenv init -|psub)

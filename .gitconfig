@@ -2,7 +2,8 @@
 	ui = true
 [user]
 	name = Matt Massicotte
-	email = mmassicotte@twitter.com
+	email = matt@massicotte.org
+	signingkey = C2F84E81FEF43CB4
 [push]
 	default = upstream
 [core]
@@ -11,3 +12,5 @@
 	excludesfile = /Users/matt/.gitignore_global
 	attributesfile = /Users/matt/.gitattributes
 
+[pull]
+	rebase = true
