@@ -2,8 +2,8 @@
 	ui = true
 [user]
 	name = Matt Massicotte
-	email = matt@massicotte.org
-	signingkey = C2F84E81FEF43CB4
+	email = 85322+mattmassicotte@users.noreply.github.com
+	signingkey = CC209CE203F23602
 [push]
 	default = upstream
 [core]
