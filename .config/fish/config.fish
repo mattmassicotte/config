@@ -1,11 +1,17 @@
 # set basic config
 set fish_greeting
-set -x PATH /usr/local/bin $HOME/.rbenv/bin $HOME/.rbenv/shims $PATH
 set -x LSCOLORS hxfxcxdxbxegedabagacad
 set -x EDITOR "mate -w"
 
-# set app-specific config
-set -x HOMEBREW_GITHUB_API_TOKEN 805d08658547a864b9ecc6f77d5d96b642c598a6
+# MacPorts
+set -x MANPATH /opt/local/share/man $MANPATH
+set -x PATH /opt/local/bin /opt/local/sbin $PATH
+
+# rbenv
+if test (which rbenv)
+	set -x PATH $HOME/.rbenv/bin $HOME/.rbenv/shims $PATH
+	status --is-interactive; and source (rbenv init -|psub)
+end
 
 # source local config
 if test -e $HOME/.local/config.fish
@@ -14,5 +20,3 @@ end
 
 # source function definitions
 source $HOME/.config/fish/keychain_environment_variables.fish
-
-status --is-interactive; and source (rbenv init -|psub)
