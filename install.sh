@@ -26,5 +26,7 @@ ln -s "${PWD}/.bash_profile" "${HOME}/.bash_profile"
 mkdir -p "${HOME}/.bundle"
 ln -s "${PWD}/.bundle/config" "${HOME}/.bundle/config"
 
+ln -s "${PWD}/.lldbinit" "${HOME}/.lldbinit
+
 mkdir -p "${HOME}/.rbenv/bin"
 mkdir -p "${HOME}/.rbenv/shims"
