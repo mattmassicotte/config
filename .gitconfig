@@ -2,11 +2,12 @@
 	ui = true
 [user]
 	name = Matt Massicotte
-	email = matt@massicotte.org
+	email = 85322+mattmassicotte@users.noreply.github.com
 	signingkey = CC209CE203F23602
 	name = Matt
 [push]
 	default = upstream
+	autosetupremote = true
 [core]
 	ignorecase = false
 	editor = mate -w
@@ -17,3 +18,15 @@
 	rebase = true
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[branch]
+	sort = committerdate
+[tag]
+	sort = committerdate
+[merge]
+	conflictstyle = diff3
+[format]
+	pretty = oneline

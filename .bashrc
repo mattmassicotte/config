@@ -18,3 +18,4 @@ read -s -p "Enter Value for ${1}: " secret
     ( [ -n "$1" ] && [ -n "$secret" ] ) || return 1
     security add-generic-password -U -a ${USER} -D "environment variable" -s "${1}" -w "${secret}"
 }
+. "$HOME/.cargo/env"

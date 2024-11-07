@@ -2,3 +2,4 @@
 .rbenv-gemsets
 
 xcuserdata/
+ruby_vendor
